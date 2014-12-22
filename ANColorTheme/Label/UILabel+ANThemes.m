@@ -10,25 +10,29 @@
 
 @implementation UILabel (ANThemes)
 
-+ (UILabel *)labelWithTheme:(id<ANColorThemeLabelInterface>)theme
++ (instancetype)an_labelWithTheme:(id<ANColorThemeLabelInterface>)theme
 {
     UILabel* label = [UILabel new];
+    [label an_updateAppearanceWithTheme:theme];
+    return label;
+}
+
+- (void)an_updateAppearanceWithTheme:(id<ANColorThemeLabelInterface>)theme
+{
     if (theme)
     {
-        label.numberOfLines = [theme maxNumberOfLines];
-        label.font = [theme font];
-        label.textColor = [theme textColor];
-        label.textAlignment = [theme textAlignment];
-        label.shadowColor = [theme shadowColor];
-        label.shadowOffset = [theme shadowOffset];
+        self.numberOfLines = [theme maxNumberOfLines];
+        self.font = [theme font];
+        self.textColor = [theme textColor];
+        self.textAlignment = [theme textAlignment];
+        self.shadowColor = [theme shadowColor];
+        self.shadowOffset = [theme shadowOffset];
         NSString* text = [theme predefinedText];
         if (text)
         {
-            label.text = text;
+            self.text = text;
         }
     }
-    
-    return label;
 }
 
 @end

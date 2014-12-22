@@ -10,6 +10,8 @@
 
 @interface UILabel (ANThemes)
 
-+ (UILabel*)labelWithTheme:(id<ANColorThemeLabelInterface>)theme;
++ (instancetype)an_labelWithTheme:(id<ANColorThemeLabelInterface>)theme;
+
+- (void)an_updateAppearanceWithTheme:(id<ANColorThemeLabelInterface>)theme;
 
 @end
