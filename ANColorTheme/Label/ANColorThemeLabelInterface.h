@@ -9,5 +9,11 @@
 @protocol ANColorThemeLabelInterface <NSObject>
 
 - (UIFont*)font;
+- (UIColor*)textColor;
+- (NSTextAlignment)textAlignment;
+- (UIColor*)shadowColor;
+- (CGSize)shadowOffset;
+- (NSUInteger)maxNumberOfLines;
+- (NSString*)predefinedText;
 
 @end
