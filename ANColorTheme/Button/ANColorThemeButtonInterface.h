@@ -7,21 +7,40 @@
 
 @protocol ANColorThemeButtonInterface <NSObject>
 
-@property (nonatomic, strong) UIColor* normalStateBackground;
-@property (nonatomic, strong) UIColor* selectedStateBackground;
-@property (nonatomic, strong) UIColor* disabledStateBackground;
+- (UIColor*)normalStateBackground;
+- (UIColor*)selectedStateBackground;
+- (UIColor*)disabledStateBackground;
 
-@property (nonatomic, strong) UIColor* normalStateFontColor;
-@property (nonatomic, strong) UIColor* selectedStateFontColor;
-@property (nonatomic, strong) UIColor* disabledStateFontColor;
+- (UIColor*)normalStateFontColor;
+- (UIColor*)selectedStateFontColor;
+- (UIColor*)disabledStateFontColor;
 
-@property (nonatomic, strong) UIColor* borderColor;
-@property (nonatomic, assign) CGFloat borderWidth;
-@property (nonatomic, assign) CGFloat cornerRadius;
+- (UIFont*)titleLabelFont;
 
-@property (nonatomic, assign) UIEdgeInsets iconEdges;
-@property (nonatomic, assign) UIEdgeInsets titleEdges;
+- (UIColor*)borderColor;
+- (CGFloat)borderWidth;
+- (CGFloat)cornerRadius;
 
-@property (nonatomic, strong) UIFont* titleLabelFont;
+- (UIEdgeInsets)iconEdges;
+- (UIEdgeInsets)titleEdges;
+
+
+- (void)setNormalStateBackground:(UIColor*)color;
+- (void)setSelectedStateBackground:(UIColor*)color;
+- (void)setDisabledStateBackground:(UIColor*)color;
+
+- (void)setNormalStateFontColor:(UIColor*)color;
+- (void)setSelectedStateFontColor:(UIColor*)color;
+- (void)setDisabledStateFontColor:(UIColor*)color;
+
+- (void)setTitleLabelFont:(UIFont*)titleFont;
+
+- (void)setBorderColor:(UIColor*)borderColor;
+- (void)setBorderWidth:(CGFloat)borderWidth;
+- (void)setCornerRadius:(CGFloat)cornerRadius;
+
+- (void)setIconEdges:(UIEdgeInsets)edges;
+- (void)setTitleEdges:(UIEdgeInsets)edges;
+
 
 @end
