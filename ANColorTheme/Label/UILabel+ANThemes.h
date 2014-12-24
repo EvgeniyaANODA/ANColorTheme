@@ -1,9 +1,8 @@
 //
 //  UILabel+ANThemes.h
-//  CRToastDemo
 //
 //  Created by Oksana Kovalchuk on 22/12/14.
-//  Copyright (c) 2014 Collin Ruffenach. All rights reserved.
+//  Copyright (c) 2014 ANODA. All rights reserved.
 //
 
 #import "ANColorThemeLabelInterface.h"
