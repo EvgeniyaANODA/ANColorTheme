@@ -22,8 +22,15 @@
     if (theme)
     {
         self.numberOfLines = [theme maxNumberOfLines];
-        self.font = [theme font];
-        self.textColor = [theme textColor];
+        if ([theme font])
+        {
+            self.font = [theme font];
+        }
+        if ([theme textColor])
+        {
+            self.textColor = [theme textColor];
+        }
+        
         self.textAlignment = [theme textAlignment];
         self.shadowColor = [theme shadowColor];
         self.shadowOffset = [theme shadowOffset];

@@ -8,6 +8,8 @@
 
 @protocol ANColorThemeLabelInterface <NSObject>
 
+@required
+
 - (UIFont*)font;
 - (UIColor*)textColor;
 - (NSTextAlignment)textAlignment;
@@ -15,5 +17,13 @@
 - (CGSize)shadowOffset;
 - (NSUInteger)maxNumberOfLines;
 - (NSString*)predefinedText;
+
+- (void)setFont:(UIFont*)font;
+- (void)setTextColor:(UIColor*)textColor;
+- (void)setTextAlignment:(NSTextAlignment)textAlignment;
+- (void)setShadowColor:(UIColor*)shadowColor;
+- (void)setShadowOffset:(CGSize)shadowOffset;
+- (void)setMaxNumberOfLines:(NSUInteger)maxNumberOfLines;
+- (void)setPredefinedText:(NSString*)text;
 
 @end
