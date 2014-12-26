@@ -20,5 +20,6 @@
 
 @property (nonatomic, strong) UIColor* shadowColor;
 @property (nonatomic, assign) CGSize shadowOffset;
+@property (nonatomic, assign) CGFloat cornerRadius;
 
 @end

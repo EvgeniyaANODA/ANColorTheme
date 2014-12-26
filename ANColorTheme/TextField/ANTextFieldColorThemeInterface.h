@@ -17,6 +17,7 @@
 - (NSUInteger)maxNumberOfLines;
 - (NSString*)predefinedText;
 - (NSString*)placeholder;
+- (CGFloat)cornerRadius;
 
 - (void)setFont:(UIFont*)font;
 - (void)setTextColor:(UIColor*)textColor;
@@ -26,5 +27,6 @@
 - (void)setMaxNumberOfLines:(NSUInteger)maxNumberOfLines;
 - (void)setPredefinedText:(NSString*)text;
 - (void)setPlaceholder:(NSString*)placeholder;
+- (void)setCornerRadius:(CGFloat)cornerRadius;
 
 @end

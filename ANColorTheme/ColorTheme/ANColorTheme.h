@@ -8,6 +8,7 @@
 #import "ANColorThemeInterface.h"
 #import "ANColorThemeButtonInterface.h"
 #import "ANNavigationBarThemeInterface.h"
+#import "ANTextFieldColorThemeInterface.h"
 
 @interface ANColorTheme : NSObject
 
@@ -27,6 +28,9 @@
 
 //navigation
 @property (nonatomic, strong) id<ANNavigationBarThemeInterface> navigationBarTheme;
+
+//textField
+@property (nonatomic, strong) id<ANTextFieldColorThemeInterface> centerLayoutTextField;
 
 @property (nonatomic, strong) UIColor* textGrayColor;
 @property (nonatomic, strong) UIColor* textLightGrayColor;
