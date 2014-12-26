@@ -5,6 +5,11 @@
 //
 //
 
+#import "ANTextFieldColorThemeInterface.h"
+
 @interface UITextField (ANThemes)
+
++ (instancetype)an_textFieldWithTheme:(id<ANTextFieldColorThemeInterface>)theme;
+- (void)an_updateAppearanceWithTheme:(id<ANTextFieldColorThemeInterface>)theme;
 
 @end

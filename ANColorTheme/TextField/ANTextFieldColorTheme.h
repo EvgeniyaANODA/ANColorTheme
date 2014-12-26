@@ -16,10 +16,6 @@
 @property (nonatomic, strong) NSString* placeholder;
 
 @property (nonatomic, assign) NSTextAlignment textAlignment;
-@property (nonatomic, assign) NSUInteger maxNumberOfLines;
-
-@property (nonatomic, strong) UIColor* shadowColor;
-@property (nonatomic, assign) CGSize shadowOffset;
 @property (nonatomic, assign) CGFloat cornerRadius;
 
 @end
