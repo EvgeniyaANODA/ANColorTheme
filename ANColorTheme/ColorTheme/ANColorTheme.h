@@ -15,6 +15,9 @@
 @property (nonatomic, strong) id<ANColorThemeButtonInterface> primaryStyle;
 @property (nonatomic, strong) id<ANColorThemeButtonInterface> dangerStyle;
 
+//additional
+@property (nonatomic, strong) id<ANColorThemeButtonInterface> actionSheetStyle;
+
 //socials
 @property (nonatomic, strong) id<ANColorThemeButtonInterface> vkStyle;
 @property (nonatomic, strong) id<ANColorThemeButtonInterface> fbStyle;
@@ -24,7 +27,6 @@
 
 //navigation
 @property (nonatomic, strong) id<ANNavigationBarThemeInterface> navigationBarTheme;
-
 
 @property (nonatomic, strong) UIColor* textGrayColor;
 @property (nonatomic, strong) UIColor* textLightGrayColor;
