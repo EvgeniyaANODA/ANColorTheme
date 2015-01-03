@@ -29,9 +29,6 @@
 //navigation
 @property (nonatomic, strong) id<ANNavigationBarThemeInterface> navigationBarTheme;
 
-//textField
-@property (nonatomic, strong) id<ANTextFieldColorThemeInterface> centerLayoutTextField;
-
 @property (nonatomic, strong) UIColor* textGrayColor;
 @property (nonatomic, strong) UIColor* textLightGrayColor;
 

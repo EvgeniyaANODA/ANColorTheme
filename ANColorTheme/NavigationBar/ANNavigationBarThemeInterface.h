@@ -9,6 +9,10 @@
 @protocol ANNavigationBarThemeInterface <NSObject>
 
 - (UIColor*)backgroundColor;
+- (UIColor*)tintColor;
 - (UIColor*)titleFontColor;
+- (UIFont*)titleFont;
+- (UIImage*)backgroundImage;
+- (NSArray*)containerClasses;
 
 @end

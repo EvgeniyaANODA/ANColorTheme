@@ -6,7 +6,18 @@
 //
 
 #import "ANColorTheme.h"
+#import "UIFont+ANAdditions.h"
 
 @implementation ANColorTheme
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        [UIFont addFontName:@"HelveticaNeue-Light" forType:ANFontTypeLight];
+    }
+    return self;
+}
 
 @end

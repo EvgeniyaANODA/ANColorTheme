@@ -15,6 +15,8 @@
 - (NSString*)predefinedText;
 - (NSString*)placeholder;
 - (CGFloat)cornerRadius;
+- (UIColor*)backgroundColor;
+- (UIColor*)placeholderColor;
 
 - (void)setFont:(UIFont*)font;
 - (void)setTextColor:(UIColor*)textColor;
@@ -22,5 +24,7 @@
 - (void)setPredefinedText:(NSString*)text;
 - (void)setPlaceholder:(NSString*)placeholder;
 - (void)setCornerRadius:(CGFloat)cornerRadius;
+- (void)setBackgroundColor:(UIColor*)backgroundColor;
+- (void)setPlaceholderColor:(UIColor*)color;
 
 @end

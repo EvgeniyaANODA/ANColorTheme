@@ -27,10 +27,16 @@
         if ([theme textColor])
         {
             self.textColor = [theme textColor];
+            self.tintColor = [theme textColor];
         }
         if ([theme placeholder])
         {
             self.placeholder = [theme placeholder];
+        }
+        
+        if ([theme backgroundColor])
+        {
+            self.backgroundColor = [theme backgroundColor];
         }
         
         self.textAlignment = [theme textAlignment];
@@ -39,6 +45,13 @@
         if (text)
         {
             self.text = text;
+        }
+        if ([theme placeholderColor])
+        {
+            NSDictionary *attrs = @{NSFontAttributeName : self.font,
+                                    NSForegroundColorAttributeName : [theme placeholderColor]};
+            self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder
+                                                                         attributes:attrs];
         }
     }
 }

@@ -14,6 +14,8 @@
 @property (nonatomic, strong) UIColor* textColor;
 @property (nonatomic, strong) NSString* predefinedText;
 @property (nonatomic, strong) NSString* placeholder;
+@property (nonatomic, strong) UIColor* backgroundColor;
+@property (nonatomic, strong) UIColor* placeholderColor;
 
 @property (nonatomic, assign) NSTextAlignment textAlignment;
 @property (nonatomic, assign) CGFloat cornerRadius;

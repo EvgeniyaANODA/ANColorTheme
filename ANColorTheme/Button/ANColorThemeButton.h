@@ -21,9 +21,10 @@
 @property (nonatomic, assign) CGFloat borderWidth;
 @property (nonatomic, assign) CGFloat cornerRadius;
 
-@property (nonatomic, assign) UIEdgeInsets iconEdges;
+@property (nonatomic, assign) UIEdgeInsets imageEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets titleEdges;
+@property (nonatomic, assign) CGFloat height;
 
-@property (nonatomic, strong) UIFont* titleLabelFont;
+@property (nonatomic, strong) UIFont* font;
 
 @end
