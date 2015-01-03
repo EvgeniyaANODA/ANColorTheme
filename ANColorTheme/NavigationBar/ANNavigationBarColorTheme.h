@@ -16,5 +16,6 @@
 @property (nonatomic, strong) UIFont* titleFont;
 @property (nonatomic, strong) UIImage* backgroundImage;
 @property (nonatomic, strong) NSArray* containerClasses;
+@property (nonatomic, assign) BOOL hideShadow;
 
 @end

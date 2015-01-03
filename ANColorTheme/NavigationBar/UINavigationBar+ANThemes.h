@@ -11,6 +11,6 @@
 
 @interface UINavigationBar (ANThemes)
 
-- (void)an_updateWithTheme:(id<ANNavigationBarThemeInterface>)theme;
++ (void)an_updateWithTheme:(id<ANNavigationBarThemeInterface>)theme;
 
 @end

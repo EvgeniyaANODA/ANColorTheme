@@ -11,7 +11,7 @@
 
 @implementation UINavigationBar (ANThemes)
 
-- (void)an_updateWithTheme:(id<ANNavigationBarThemeInterface>)theme
++ (void)an_updateWithTheme:(id<ANNavigationBarThemeInterface>)theme
 {
     id appearance = [UINavigationBar appearance];
     if (!ANIsEmpty([theme containerClasses]))
@@ -33,6 +33,19 @@
             [appearance setTintColor:[theme tintColor]];
         }
     }
+    if ([theme hideShadow])
+    {
+        [appearance setShadowImage:[UIImage new]]; // TODO:
+    }
+ 
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[CDColorTheme shared].navBarbackgroundColor] forBarMetrics:UIBarMetricsDefault];
+//    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+//    NSDictionary* titleAttributes = @{NSForegroundColorAttributeName : [CDColorTheme shared].navBarFontColor,
+//                                      NSFontAttributeName            : [UIFont an_regularFontWithSize:17],
+//                                      NSKernAttributeName            : @(2.0)};
+//    
+//    [[UINavigationBar appearance] setTitleTextAttributes:titleAttributes];
+    
 }
 
 @end

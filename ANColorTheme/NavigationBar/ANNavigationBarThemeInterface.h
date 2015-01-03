@@ -15,4 +15,6 @@
 - (UIImage*)backgroundImage;
 - (NSArray*)containerClasses;
 
+- (BOOL)hideShadow;
+
 @end
