@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'ANColorTheme'
-  spec.version  = '1.0.2'
+  spec.version  = '1.0.3'
   spec.license  = { :type => 'MIT' }
   spec.homepage = 'https://github.com/anodamobi/ANColorTheme'
   spec.authors  = { 'Oksana Kovalchuk' => 'oksana@anoda.mobi' }
