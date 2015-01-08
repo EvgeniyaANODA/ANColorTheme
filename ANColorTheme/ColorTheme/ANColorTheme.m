@@ -15,7 +15,6 @@
     self = [super init];
     if (self)
     {
-        [UIFont addFontName:@"HelveticaNeue-Light" forType:ANFontTypeLight];
     }
     return self;
 }
