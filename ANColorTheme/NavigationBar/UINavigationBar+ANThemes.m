@@ -22,7 +22,8 @@
     [appearance setBackgroundImage:[theme backgroundImage] forBarMetrics:UIBarMetricsDefault];
     
     NSDictionary* titleAttributes = @{UITextAttributeTextColor : [theme titleFontColor],
-                                      UITextAttributeTextShadowColor : [UIColor clearColor]};
+                                      UITextAttributeTextShadowColor : [UIColor clearColor],
+                                      UITextAttributeFont : [theme titleFont]};
     
     [appearance setTitleTextAttributes:titleAttributes];
     
