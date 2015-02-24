@@ -31,7 +31,7 @@
     {
         if ([theme tintColor])
         {
-            [appearance setTintColor:[theme tintColor]];
+            [appearance setBarTintColor:[theme tintColor]];
         }
     }
     if ([theme hideShadow])
